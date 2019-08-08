@@ -4,9 +4,9 @@ import Layout from '../components/layout';
 export default () => (
   <Layout>
     <div>
-      <h1>About me</h1>
+      <h1>I'd love to talk! Email me at the address below</h1>
       <p>
-        I’m good enough, I’m smart enough, and gosh darn it, people like me!
+        <a href="mailto:me@example.com">me@example.com</a>
       </p>
     </div>
   </Layout>
