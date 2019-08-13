@@ -1,0 +1,9 @@
+.link {
+  font-size: 0.825rem;
+  color: black;
+  text-transform: uppercase;
+  text-shadow: none;
+  flex: 0 1 auto;
+  align-items: flex-end;
+  margin-left: 1rem;
+}

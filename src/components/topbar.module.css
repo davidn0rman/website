@@ -1,0 +1,9 @@
+.topbar {
+  background-color: lightslategray;
+  width: 100%;
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+}
