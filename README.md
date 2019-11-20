@@ -10,4 +10,5 @@ Cheeky repo for me to learn and play with React and Gatsby.
 
 # Useful commands
 
-- `gatsby develop` - Run the site locally.
+1. `npm install` - Get this sucka setup
+2. `gatsby develop` - Run this sucka locally
