@@ -1,23 +1,27 @@
 import React from "react"
-import Section from "../components/section"
-import Navigation from "../components/navigation"
+import HeroSection from "../components/sections/hero-section"
+import AboutSection from "../components/sections/about-section"
+import Navigation from "../components/navigation/navigation"
+
 import { Link } from "gatsby"
 
 export default () => (
   <div>
-    <Navigation
-      text="Hello"
-    />
-    <Section
+    <Navigation />
+    <HeroSection
       sectionText="Welcome to my world"   
       name="hero"
-      isHero={true}
+      // isHero={true}
+      className="sectionHero"
     >
       <Link to="/about/">About</Link>
-    </Section>
-    <Section
-      sectionText="Welcome, to the rock"   
-      name="sectiom" 
-    />
+    </HeroSection>
+    <AboutSection
+      name="section2" 
+    >
+      <h1>Test</h1>
+      <p>Lorem ipsum</p>
+      <h2>Test</h2>
+    </AboutSection>
   </div>
 )

@@ -10,9 +10,13 @@ import styles from "./navigation.module.scss"
 class Navigation extends React.Component {
   render() {
     return (
-      <div className={styles.nav}>
-        {this.props.text}
-      </div>
+      <nav>
+        <ul className={styles.links}>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+      </nav>
     )
   }
 }

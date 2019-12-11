@@ -1,0 +1,13 @@
+.links {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  li {
+    flex: 1 1 auto;
+    max-width: 10rem;
+  }
+}
