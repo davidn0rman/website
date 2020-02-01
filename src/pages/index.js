@@ -6,8 +6,8 @@ import Navigation from "../components/navigation/navigation"
 import { Link } from "gatsby"
 
 export default () => (
-  <div>
-    <Navigation />
+  <>
+    <!--<Navigation />
     <HeroSection
       sectionText="Welcome to my world"   
       name="hero"
@@ -22,6 +22,7 @@ export default () => (
       <h1>Test</h1>
       <p>Lorem ipsum</p>
       <h2>Test</h2>
-    </AboutSection>
-  </div>
+    </AboutSection>-->
+    <h1>Hello</h1>
+  </>
 )
