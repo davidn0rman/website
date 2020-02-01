@@ -8,7 +8,7 @@ import Footer from '../components/footer';
 
 export default () => (
   <>
-    <Topbar>
+    <!--<Topbar>
       <Brand text="Top Banta Chronicle" />
       <TopbarLink text="Home" />
       <TopbarLink text="Latest news" />
@@ -18,6 +18,7 @@ export default () => (
     <Footer>
       <Link to="/about/">About</Link>
       <Link to="/contact/">Contact</Link>
-    </Footer>
+    </Footer>-->
+    <h1>Hello</h1>
   </>
 );
