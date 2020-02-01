@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 
 export default () => (
   <>
-    <!--<Navigation />
+    <Navigation />
     <HeroSection
       sectionText="Welcome to my world"   
       name="hero"
@@ -22,7 +22,7 @@ export default () => (
       <h1>Test</h1>
       <p>Lorem ipsum</p>
       <h2>Test</h2>
-    </AboutSection>-->
+    </AboutSection>
     <h1>Hello</h1>
   </>
 )
