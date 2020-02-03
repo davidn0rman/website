@@ -1,8 +1,8 @@
 // import classNames from "classnames";
 import React from "react"
-import styles from "./about-section.module.scss"
+import styles from "./comingsoon.module.scss"
 
-class AboutSection extends React.Component {
+class ComingSoonSection extends React.Component {
   render() {
     // const classes = classNames(
     //   styles.section,
@@ -15,10 +15,11 @@ class AboutSection extends React.Component {
         id={this.props.id}
         name={this.props.name}
       >
+        {this.props.sectionText}
         {this.props.children}
       </section>
     )
   }
 }
 
-export default AboutSection
+export default ComingSoonSection

@@ -1,0 +1,24 @@
+.section {
+  background-image: url("../../images/comingsoonbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: "Lato";
+  font-size: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  border: 5px solid white;
+  box-sizing: border-box;
+
+  & h1 {
+    text-shadow: 0 5px 2px black;
+    border: 1px sold black;
+    padding: 0 2rem;
+  }
+}
