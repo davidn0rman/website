@@ -2,7 +2,7 @@
 import React from "react"
 import styles from "./about-section.module.scss"
 
-class HeroSection extends React.Component {
+class AboutSection extends React.Component {
   render() {
     // const classes = classNames(
     //   styles.section,
@@ -21,4 +21,4 @@ class HeroSection extends React.Component {
   }
 }
 
-export default HeroSection
+export default AboutSection
