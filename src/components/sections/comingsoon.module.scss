@@ -1,24 +1,35 @@
 .section {
-  background-image: url("../../images/comingsoonbackground.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: repeating-linear-gradient(
+    45deg,
+    orange,
+    orange 1rem,
+    #333 1rem,
+    #333 2rem
+  );
   display: flex;
-  flex-direction: column;
+  height: 90vh;
+  color: #333;
+  font-family: "Lato";
+  font-size: 5rem;
+  text-align: center;
+  // text-shadow: 5px 5px 5px black;
+}
+
+.innerSection {
+  position: absolute;
+  display: flex;
+
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  color: white;
-  font-family: "Lato";
-  font-size: 4rem;
-  text-align: center;
-  line-height: 4rem;
-  border: 5px solid white;
-  box-sizing: border-box;
-
-  & h1 {
-    text-shadow: 0 5px 2px black;
-    border: 1px sold black;
-    padding: 0 2rem;
-  }
+  top: 1rem;
+  bottom: 12vh;
+  right: 1rem;
+  left: 1rem;
+  background-color: orange;
 }
+
+// @media (prefers-color-scheme: dark) {
+//   .section {
+//     color: #fff;
+//   }
+// }
