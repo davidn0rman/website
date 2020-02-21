@@ -11,7 +11,6 @@ class Section extends React.Component {
       this.props.sectionName === "about" ? `${styles.aboutSection}` : ``,
       this.props.sectionName === "comingsoon" ? `${styles.comingsoonSection}` : ``,
     );
- 
     return (
       <section className={classes}>
         {this.props.children}
