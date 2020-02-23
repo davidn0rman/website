@@ -10,6 +10,8 @@ class Section extends React.Component {
       this.props.sectionName === "hero" ? `${styles.heroSection}` : ``,
       this.props.sectionName === "about" ? `${styles.aboutSection}` : ``,
       this.props.sectionName === "comingsoon" ? `${styles.comingsoonSection}` : ``,
+      this.props.sectionName === "links" ? `${styles.linksSection}` : ``,
+      this.props.sectionName === "footer" ? `${styles.footerSection}` : ``,
     );
     return (
       <section className={classes}>

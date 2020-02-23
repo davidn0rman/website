@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import styles from "./styles/index.module.scss"
-import Heading from "../components/section/heading"
 import SubHeading from "../components/section/sub-heading"
 import Section from "../components/section/section"
 import SectionContent from "../components/section/section-content"
@@ -23,15 +22,51 @@ export default ({ data }) => (
     </Section>
     <Section sectionName="about">
       <SectionContent>
-        <Heading heading="H2" text="About" />
-        <div className={styles.container}>
-          <div className={styles.box}><Heading heading="H2" text="UX"/></div>
-          <div className={styles.box}><Heading heading="H2" text="Frontend"/></div>
-          <div className={styles.box}><Heading heading="H2" text="Dad"/></div>
+        <h1 className={styles.aboutH1}>What do I do?!</h1>
+        <div className={styles.gridContainer}>
+          <div className={styles.gridHeaderUx}><h2 className={styles.aboutH2}>UX</h2></div>
+          <div className={styles.gridIconUx}><img src="https://via.placeholder.com/100" /></div>
+          <div className={styles.gridContentUx}>
+            <ul className={styles.gridList}>
+              <li>Protoyping</li>
+              <li>Mockups</li>
+              <li>User research</li>
+              <li>Personas</li>
+            </ul>
+          </div>
+          <div className={styles.gridHeaderFrontend}><h2 className={styles.aboutH2}>Frontend</h2></div>
+          <div className={styles.gridIconFrontend}><img src="https://via.placeholder.com/100" /></div>
+          <div className={styles.gridContentFrontend}>
+            <ul className={styles.gridList}>
+              <li>HTML</li>
+              <li>CSS/SCSS</li>
+              <li>JavaScript/TypeScript</li>
+              <li>Webpack</li>
+              <li>Gulp</li>
+            </ul>
+          </div>
+          <div className={styles.gridHeaderDad}><h2 className={styles.aboutH2}>Dad</h2></div>
+          <div className={styles.gridIconDad}><img src="https://via.placeholder.com/100" /></div>
+          <div className={styles.gridContentDad}>
+            <ul className={styles.gridList}>
+              <li>Chief giggle maker</li>
+              <li>Nappy changer</li>
+              <li>Sick target</li>
+              <li>Bank of dad</li>
+            </ul>
+          </div>
         </div>
+        <button className={styles.aboutButton}>Read me tweets!</button>
       </SectionContent>
     </Section>
-    <Section sectionName="comingsoon"/>
+    <Section sectionName="links">
+     <SectionContent horizontal={true}>
+        <img src="https://via.placeholder.com/32" />
+        <img src="https://via.placeholder.com/32" />
+        <img src="https://via.placeholder.com/32" />
+      </SectionContent>
+    </Section>
+    <Section sectionName="footer"/>
   </>
 )
 export const query = graphql`
