@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `David Norman - Front End Developer`,
+    description: `I am a UX Designer and budding Front End Developer from the United Kingdom`,
+    author: `@davidn0rman`,
+    shortname: `David`,
+    fullname: `David Norman`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -25,7 +27,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -36,6 +38,7 @@ module.exports = {
       options: {
         fonts: [
           `Source Code Pro`,
+          `Source Sans Pro\:400,700,900`,
           `Lato\:300,400,400i,700` // you can also specify font weights and styles
         ],
         display: 'swap'

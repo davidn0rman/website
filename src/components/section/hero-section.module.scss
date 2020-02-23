@@ -1,0 +1,53 @@
+.hero {
+  &-section {
+    background: #20d4f6;
+    background: linear-gradient(to bottom, #20d4f6 0%, #57109e 100%);
+    display: flex;
+    font-family: "Source Sans Pro";
+    height: 100vh;
+    text-align: center;
+  }
+
+  &-content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-title {
+    color: #fff;
+    flex: 1;
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 6rem;
+    margin: 0;
+    padding: 0;
+    padding: 0 1rem;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+  }
+
+  &-subtitle {
+    color: #72ecf6;
+    flex: 1;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    &-title {
+      font-size: 14rem;
+      line-height: 12rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    &-title {
+      font-size: 16rem;
+      line-height: 16rem;
+    }
+  }
+}
