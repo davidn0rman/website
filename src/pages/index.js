@@ -34,17 +34,14 @@ class Index extends React.Component{
   updateScrollPosition() {
     const currentScrollPosition = window.scrollY;
     if (currentScrollPosition === 0) {
-      console.warn("WE TOP");
       this.setState({
         isTop: true 
       })
-    } else if (currentScrollPosition > 0 && currentScrollPosition < window.innerHeight) {
-      console.warn("WE INSIDE");
+    } else if (currentScrollPosition > 0 && (currentScrollPosition < window.innerHeight - 57)) {
       this.setState({
         isTop: true
       })
     } else {
-      console.warn("WE OUT");
       this.setState({
         isTop: false
       })
