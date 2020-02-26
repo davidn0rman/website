@@ -1,4 +1,5 @@
 import React from "react"
+import classNames from "classnames"
 import styles from "./navigation.module.scss"
 
 // export default props =>
@@ -8,17 +9,23 @@ import styles from "./navigation.module.scss"
 
 class Navigation extends React.Component {
   render() {
+    const navClasses = classNames(
+      this.props.isTop ? `${styles.navigationTop}` : `${styles.navigation}`
+    );
     return (
-      <nav>
-        <ul className={styles.links}>
+      <nav className={navClasses}>
+        <ul className={styles.navLinks}>
           <li>
-            <a href="#">Home</a>
+            <a className={styles.navLink} href="#">Link</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a className={styles.navLink} href="#">Link</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a className={styles.navLink} href="#">Link</a>
+          </li>
+          <li>
+            <a className={styles.navLink} href="#">Link</a>
           </li>
         </ul>
       </nav>
