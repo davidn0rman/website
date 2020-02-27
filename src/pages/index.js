@@ -39,36 +39,36 @@ class Index extends React.Component{
             <Section sectionName="about">
               <SectionContent>
                 <h1 className={styles.aboutH1}>What do I do?!</h1>
+                <p  className={styles.aboutSubtext}>"Not a lot" - <i>Mark Gaze, everyday</i></p>
                 <div className={styles.gridContainer}>
-                  <div className={styles.gridHeaderUx}><h2 className={styles.aboutH2}>UX</h2></div>
-                  <div className={styles.gridIconUx}><img src="https://via.placeholder.com/100" alt="UX icon" /></div>
-                  <div className={styles.gridContentUx}>
-                    <ul className={styles.gridList}>
-                      <li>Protoyping</li>
-                      <li>Mockups</li>
-                      <li>User research</li>
-                      <li>Personas</li>
-                    </ul>
-                  </div>
                   <div className={styles.gridHeaderFrontend}><h2 className={styles.aboutH2}>Frontend</h2></div>
                   <div className={styles.gridIconFrontend}><img src="https://via.placeholder.com/100" alt="Frontend icon" /></div>
                   <div className={styles.gridContentFrontend}>
                     <ul className={styles.gridList}>
-                      <li>HTML</li>
-                      <li>CSS/SCSS</li>
-                      <li>JavaScript/TypeScript</li>
-                      <li>Webpack</li>
-                      <li>Gulp</li>
+                      <li>Lorem ipsum</li>
+                      <li>Dolar sit</li>
+                      <li>Personas</li>
+                      <li>Amet consectetur</li>
+                    </ul>
+                  </div>
+                  <div className={styles.gridHeaderUx}><h2 className={styles.aboutH2}>UX</h2></div>
+                  <div className={styles.gridIconUx}><img src="https://via.placeholder.com/100" alt="UX icon" /></div>
+                  <div className={styles.gridContentUx}>
+                    <ul className={styles.gridList}>
+                      <li>Lorem ipsum</li>
+                      <li>Dolar sit</li>
+                      <li>Amet consectetur</li>
+                      <li>Personas</li>
                     </ul>
                   </div>
                   <div className={styles.gridHeaderDad}><h2 className={styles.aboutH2}>Dad</h2></div>
                   <div className={styles.gridIconDad}><img src="https://via.placeholder.com/100" alt="Dad icon" /></div>
                   <div className={styles.gridContentDad}>
                     <ul className={styles.gridList}>
-                      <li>Chief giggle maker</li>
-                      <li>Nappy changer</li>
-                      <li>Sick target</li>
-                      <li>Bank of dad</li>
+                      <li>Dolar sit</li>
+                      <li>Personas</li>
+                      <li>Amet consectetur</li>
+                      <li>Lorem ipsum</li>
                     </ul>
                   </div>
                 </div>
@@ -82,7 +82,17 @@ class Index extends React.Component{
                 <a href="https://www.instagram.com/davidn0rman"><img src="https://via.placeholder.com/32" alt="Instagram" /></a>
               </div>
             </Section>
-            <Section sectionName="footer"/>
+            <Section sectionName="project">
+              <SectionContent>
+                <h1 className={styles.projectH1}>Projects</h1>
+              </SectionContent>
+            </Section>
+            <Section sectionName="blog">
+              <SectionContent>
+                <h1 className={styles.blogH1}>Blog</h1>
+              </SectionContent>
+            </Section>
+            <Section sectionName="footer">Footer</Section>
           </>
         )}
       />

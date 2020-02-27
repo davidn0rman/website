@@ -4,7 +4,8 @@ import styles from "./button.module.scss"
 class Button extends React.Component {
   render() {
     return (
-      <button className={styles.button}>{this.props.children}</button>
+      // <button >{this.props.children}</button>
+      <a className={styles.button} href="https://twitter.com/davidn0rman">{this.props.children}</a>
     )
   }
 }

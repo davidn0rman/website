@@ -11,6 +11,8 @@ class Section extends React.Component {
       this.props.sectionName === "about" ? `${styles.aboutSection}` : ``,
       this.props.sectionName === "comingsoon" ? `${styles.comingsoonSection}` : ``,
       this.props.sectionName === "links" ? `${styles.linksSection}` : ``,
+      this.props.sectionName === "project" ? `${styles.projectSection}` : ``,
+      this.props.sectionName === "blog" ? `${styles.blogSection}` : ``,
       this.props.sectionName === "footer" ? `${styles.footerSection}` : ``,
     );
     return (
