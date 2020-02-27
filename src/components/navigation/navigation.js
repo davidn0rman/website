@@ -1,19 +1,14 @@
 import React from "react"
-import classNames from "classnames"
+// import classNames from "classnames"
 import styles from "./navigation.module.scss"
-
-// export default props =>
-//   <div className={styles.nav}>
-//     {props.headerText}
-//   </div>
 
 class Navigation extends React.Component {
   render() {
-    const navClasses = classNames(
-      this.props.isTop ? `${styles.navigationTop}` : `${styles.navigation}`
-    );
+    // const navClasses = classNames(
+    //   this.props.isTop ? `${styles.navigationTop}` : `${styles.navigation}`
+    // );
     return (
-      <nav className={navClasses}>
+      <nav className={styles.navigation}>
         <ul className={styles.navLinks}>
           <li>
             <a className={styles.navLink} href="#home">Home</a>

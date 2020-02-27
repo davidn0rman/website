@@ -9,47 +9,6 @@ import SectionContent from "../components/section/section-content"
 import Button from "../components/button"
 
 class Index extends React.Component{
-  constructor(props) {
-    super(props);
-    if (document.scrollY === 0) {
-      this.state = {
-        isTop: true 
-      }
-    } else {
-      this.state = {
-        isTop: false
-      }
-    }
-
-    this.updateScrollPosition = this.updateScrollPosition.bind(this);
-  }
-
-  componentDidMount() {
-    document.addEventListener('scroll', this.updateScrollPosition);
-  }
-
-
-  componentDidUnount() {
-    document.removeEventListener('scroll', this.updateScrollPosition);
-  }
-
-  updateScrollPosition() {
-    const currentScrollPosition = document.scrollY;
-    if (currentScrollPosition === 0) {
-      this.setState({
-        isTop: true 
-      })
-    } else if (currentScrollPosition > 0 && (currentScrollPosition < document.innerHeight - 57)) {
-      this.setState({
-        isTop: true
-      })
-    } else {
-      this.setState({
-        isTop: false
-      })
-    }
-  }
-
   render () {
     return (
       <StaticQuery
@@ -70,7 +29,7 @@ class Index extends React.Component{
               <title>{data.site.siteMetadata.title}</title>
               <meta name="description" content="Helmet application" />
             </Helmet>
-            <Navigation isTop={this.state.isTop} />
+            <Navigation />
             <Section sectionName="hero">
               <SectionContent>
                 <h1 className={styles.heroH1}>Hello! my name is {data.site.siteMetadata.shortname}</h1>
