@@ -1,6 +1,7 @@
 .section-content {
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
 
   &-horizontal {
     flex-direction: row;

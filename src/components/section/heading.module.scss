@@ -22,21 +22,15 @@
 
 
 @media only screen and (min-width: 768px) {
-  .heading {
-    font-size: 12rem;
-    line-height: 11rem;
-
-    .h2 {
-      font-size: 6rem;
-    }
+  .h2 {
+    font-size: 6rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .heading {
-    font-size: 16rem;
-    line-height: 16rem;
-    max-width: 1800px;
+    font-size: 13rem;
+    line-height: 10rem;
   }
 
   .h2 {
