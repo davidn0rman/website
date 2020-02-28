@@ -164,6 +164,63 @@
   }
 }
 
+.shapes-container {
+  align-items: center;
+  // background-color: red;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.shapeCircle1 {
+  min-width: 50px;
+  min-height: 50px;
+  left: 40%;
+  top: 15%;
+  border: 3px solid rgba(130, 41, 222, .66);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.shapeCircle2 {
+  min-width: 62px;
+  min-height: 62px;
+  right: 24%;
+  bottom: 10%;
+  border: 3px solid rgba(32, 212, 246, .33);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.shapeCross1 {
+  left: 10%;
+  bottom: 10%;
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  transform: rotate(30deg);
+  opacity: .66;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    min-width: 3px;
+    min-height: 62px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    min-width: 3px;
+    min-height: 62px;
+    transform: rotate(90deg);
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hero-h1 {
     font-size: 13rem;

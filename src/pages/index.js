@@ -31,10 +31,15 @@ class Index extends React.Component{
             </Helmet>
             <Navigation />
             <Section sectionName="hero">
-              <SectionContent>
-                <h1 className={styles.heroH1}>Hello! my name is {data.site.siteMetadata.shortname}</h1>
-                <SubHeading text="I am a UX Designer and budding Front End Developer from" emoji="GB"/>
-              </SectionContent>
+              <div className={styles.shapesContainer}>
+                <div className={styles.shapeCircle1}></div>
+                <div className={styles.shapeCircle2}></div>
+                <div className={styles.shapeCross1}></div>
+                <SectionContent>
+                  <h1 className={styles.heroH1}>Hello! my name is {data.site.siteMetadata.shortname}</h1>
+                  <SubHeading text="I am a UX Designer and budding Front End Developer from" emoji="GB"/>
+                </SectionContent>
+              </div>
             </Section>
             <Section sectionName="about">
               <SectionContent>
