@@ -7,6 +7,7 @@ import Navigation from "../components/navigation/navigation"
 import Section from "../components/section/section"
 import SectionContent from "../components/section/section-content"
 import Button from "../components/button"
+import ShapeContainer from "../components/shapes/shape-container"
 
 class Index extends React.Component{
   render () {
@@ -31,15 +32,12 @@ class Index extends React.Component{
             </Helmet>
             <Navigation />
             <Section sectionName="hero">
-              <div className={styles.shapesContainer}>
-                <div className={styles.shapeCircle1}></div>
-                <div className={styles.shapeCircle2}></div>
-                <div className={styles.shapeCross1}></div>
+              <ShapeContainer>
                 <SectionContent>
                   <h1 className={styles.heroH1}>Hello! my name is {data.site.siteMetadata.shortname}</h1>
                   <SubHeading text="I am a UX Designer and budding Front End Developer from" emoji="GB"/>
                 </SectionContent>
-              </div>
+              </ShapeContainer>
             </Section>
             <Section sectionName="about">
               <SectionContent>
