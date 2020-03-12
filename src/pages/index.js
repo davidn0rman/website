@@ -8,6 +8,7 @@ import Section from "../components/section/section"
 import SectionContent from "../components/section/section-content"
 import Button from "../components/button"
 import ShapeContainer from "../components/shapes/shape-container"
+import ProjectsContainer from "../components/projectscontainer"
 
 class Index extends React.Component{
   render () {
@@ -33,11 +34,11 @@ class Index extends React.Component{
             <Navigation />
             <Section sectionName="hero">
               <ShapeContainer>
+              </ShapeContainer>
                 <SectionContent>
                   <h1 className={styles.heroH1}>Hello! my name is {data.site.siteMetadata.shortname}</h1>
                   <SubHeading text="I am a UX Designer and budding Front End Developer from" emoji="GB"/>
                 </SectionContent>
-              </ShapeContainer>
             </Section>
             <Section sectionName="about">
               <SectionContent>
@@ -88,6 +89,7 @@ class Index extends React.Component{
             <Section sectionName="project">
               <SectionContent>
                 <h1 className={styles.projectH1}>Projects</h1>
+                <ProjectsContainer />
               </SectionContent>
             </Section>
             <Section sectionName="blog">

@@ -7,7 +7,8 @@ class SectionContent extends React.Component {
   render() {
     const classes = classNames(
       styles.sectionContent,
-      this.props.horizontal ? `${styles.sectionContentHorizontal}` : ``
+      this.props.horizontal ? `${styles.sectionContentHorizontal}` : ``,
+      // this.props.className === "hero" ? `${styles.hero}` : ``
     );
     return (
       <div className={classes}>
