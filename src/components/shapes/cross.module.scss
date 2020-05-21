@@ -1,0 +1,32 @@
+.cross {
+  position: absolute;
+  opacity: .66;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    min-width: 3px;
+    height: 62px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    min-width: 3px;
+    height: 62px;
+    transform: rotate(90deg);
+  }
+}
+
+
+.purple::before,
+.purple::after {
+  background-color: rgba(130, 41, 222, .66);
+}
+
+.blue::before,
+.blue::after {
+  background-color: rgba(32, 212, 246, .33);
+}

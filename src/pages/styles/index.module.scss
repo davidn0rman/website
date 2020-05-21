@@ -1,10 +1,77 @@
-.container {
-  display: flex;
-  max-width: 1200px;
-  border: 1px solid black;
-  background-color: wheat;
-  flex-direction: row;
-  margin: 0 1rem;
+.grid {
+  &-container {
+    max-width: 75rem;
+    // border: 1px solid black;
+    // background-color: wheat;
+    flex-direction: row;
+    margin: 0 1rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+      "header-ux" 
+      "icon-ux" 
+      "content-ux" 
+      "header-frontend"
+      "icon-frontend"
+      "content-frontend" 
+      "header-dad"
+      "icon-dad"
+      "content-dad";
+  }
+
+  &-icon {
+    &-ux {
+      grid-area: icon-ux; 
+      margin: 0 0 1rem;
+    }
+    &-frontend {
+      grid-area: icon-frontend;
+      margin: 0 0 1rem;
+    }
+    &-dad {
+      grid-area: icon-dad;
+      margin: 0 0 1rem;
+    }
+  }
+
+  &-header {
+    &-ux {
+      grid-area: header-ux; 
+    }
+    &-frontend {
+      grid-area: header-frontend;
+    }
+    &-dad {
+      grid-area: header-dad;
+    }
+  }
+
+  &-content {
+    &-ux {
+      grid-area: content-ux;
+      margin-bottom: 2rem;
+    }
+    &-frontend {
+      grid-area: content-frontend;
+      margin-bottom: 2rem;
+    }
+    &-dad {
+      grid-area: content-dad;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      color: #ffffff;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .box {
@@ -16,37 +83,115 @@
   flex: 1;
   padding: 0 1rem;
   text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 6rem; //96px
   font-weight: 900;
-  line-height: 6rem;
+  line-height: 5rem;
   margin: 0;
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.h2 {
-  font-size: 6rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+.about {
+  &-h1 {
+    color: #fff;
+    flex: 1;
+    padding: 0 1rem;
+    margin: 6rem auto;
+    text-transform: uppercase;
+    font-size: 4rem; //96px
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+
+  &-h2 {
+    color: #70E9F2;
+    flex: 1;
+    padding: 0 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 3rem; //48px
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  &-subtext {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 6rem;
+  }
 }
 
+.links-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.project {
+  &-h1 {
+    color: #fff;
+    flex: 1;
+    padding: 0 1rem;
+    margin: 6rem auto;
+    text-transform: uppercase;
+    font-size: 4rem; //96px
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+}
+
+.blog  {
+  &-h1 {
+    color: #fff;
+    flex: 1;
+    padding: 0 1rem;
+    margin: 6rem auto;
+    text-transform: uppercase;
+    font-size: 4rem; //96px
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .hero-h1 {
-    font-size: 12rem;
-    line-height: 11rem;
+    font-size: 13rem;
+    line-height: 10rem;
 
     .h2 {
       font-size: 6rem;
     }
   }
+  .grid-container {
+      // border: 1px solid black;
+      // background-color: wheat;
+      flex-direction: row;
+      margin: 0 1rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas: 
+        "header-ux header-frontend header-dad"
+        "icon-ux icon-frontend icon-dad"
+        "content-ux content-frontend content-dad";
+    }
 }
 
 @media only screen and (min-width: 1200px) {
   .hero-h1 {
-    font-size: 16rem;
-    line-height: 16rem;
-    max-width: 1800px;
+    font-size: 13rem;
+    line-height: 10rem;
   }
 
   .h2 {
