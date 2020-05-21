@@ -1,9 +1,13 @@
 .navigation {
-  display: none;
-
-  &--top {
-    display: none;
-  }
+  display: block;
+  background-color: rgba(0, 0, 0, 1);
+  // background: linear-gradient(to bottom, #531DA4 0%, #57109e 100%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.33);
+  // transition: ease-in .1s;
 }
 
 .nav-links {
@@ -32,28 +36,28 @@
 
 
 @media only screen and (min-width: 768px) {
-  .navigation {
-    display: block;
-    // background-color: rgba(0, 0, 0, 0.66);
-    // background: linear-gradient(to bottom, #531DA4 0%, #57109e 100%);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.33);
-    // transition: ease-in .1s;
+  // .navigation {
+  //   display: block;
+  //   // background-color: rgba(0, 0, 0, 0.66);
+  //   // background: linear-gradient(to bottom, #531DA4 0%, #57109e 100%);
+  //   position: fixed;
+  //   top: 0;
+  //   width: 100%;
+  //   z-index: 10;
+  //   // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.33);
+  //   // transition: ease-in .1s;
   
   
-    // &--top {
-    //   display: block;
-    //   background-color: transparent;
-    //   position: fixed;
-    //   top: 0;
-    //   width: 100%;
-    //   z-index: 10;
-    //   transition: ease-in .1s;
-    // }
-  }
+  //   // &--top {
+  //   //   display: block;
+  //   //   background-color: transparent;
+  //   //   position: fixed;
+  //   //   top: 0;
+  //   //   width: 100%;
+  //   //   z-index: 10;
+  //   //   transition: ease-in .1s;
+  //   // }
+  // }
 }
 
 @media only screen and (min-width: 1200px) {

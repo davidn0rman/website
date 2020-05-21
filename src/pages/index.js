@@ -29,7 +29,7 @@ class Index extends React.Component{
             <Helmet>
               <html lang="en" />
               <title>{data.site.siteMetadata.title}</title>
-              <meta name="description" content="Helmet application" />
+              <meta name="description" content="Oh boy can I send a mean gif." />
             </Helmet>
             <Navigation />
             <Section sectionName="hero">
