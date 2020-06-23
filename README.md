@@ -15,4 +15,3 @@ Cheeky repo for me to learn and play with React and Gatsby.
 3. Check `npm outdated` - Not running the site for a while will mean things are old. Meaning it won't run and you'll miss another episdode of House.
 4. `npm install` - Get this sucka setup. Might need sudo.
 5. `gatsby develop` - Run this sucka locally.
-s
