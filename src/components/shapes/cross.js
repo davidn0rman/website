@@ -1,34 +1,43 @@
 // import classNames from "classnames";
-import React from "react"
+import React from "react";
+import PropTypes from "prop-types"
 import classNames from "classnames";
-import styles from "./cross.module.scss"
+import styles from "./cross.module.scss";
 
-class Cross extends React.Component {
-  render() {
-    const classes = classNames(
-      styles.cross,
-      this.props.colour === "purple" ? `${styles.purple}` : ``,
-      this.props.colour === "blue" ? `${styles.blue}` : ``,
-    );
-    return (
-      <div
-        className={classes}
-        style={
-          {
-            bottom: this.props.bottom + '%',
-            height: this.props.size + 'rem',
-            left: this.props.left + '%',
-            opacity: this.props.opacity,
-            right: this.props.right + '%',
-            top: this.props.top + '%',
-            transform: 'rotate(' + this.props.rotate + 'deg)',
-            width: this.props.size + 'rem'
-          }
-        }>
-      </div>
-    )
-  }
-}
+const Cross = ({ bottom, colour }) => {
+  const classes = classNames(
+    styles.cross,
+    colour === "purple" ? `${styles.purple}` : "",
+    colour === "blue" ? `${styles.blue}` : "",
+  );
 
-export default Cross
+  const newBottom = `${bottom%}`;
 
+  return (
+    <div
+      className={classes}
+      style={
+        {
+          bottom: newBottom,
+          height: size + 'rem',
+          left: left + '%',
+          opacity: opacity,
+          right: right + '%',
+          top: top + '%',
+          transform: 'rotate(' + rotate + 'deg)',
+          width: size + 'rem'
+        }
+      }
+    />
+  );
+};
+
+Cross.propTypes = {
+  bottom: PropTypes.string,
+};
+
+Cross.defaultProps = {
+  bottom: "",
+};
+
+export default Cross;

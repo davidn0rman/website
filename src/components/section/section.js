@@ -3,24 +3,23 @@ import React from "react"
 import classNames from "classnames";
 import styles from "./section.module.scss"
 
-class Section extends React.Component {
-  render() {
-    const classes = classNames(
-      styles.section,
-      this.props.sectionName === "hero" ? `${styles.heroSection}` : ``,
-      this.props.sectionName === "about" ? `${styles.aboutSection}` : ``,
-      this.props.sectionName === "comingsoon" ? `${styles.comingsoonSection}` : ``,
-      this.props.sectionName === "links" ? `${styles.linksSection}` : ``,
-      this.props.sectionName === "project" ? `${styles.projectSection}` : ``,
-      this.props.sectionName === "blog" ? `${styles.blogSection}` : ``,
-      this.props.sectionName === "footer" ? `${styles.footerSection}` : ``,
-    );
-    return (
-      <section className={classes}>
-        {this.props.children}
-      </section>
-    )
-  }
+function Section(props) {
+  const classes = classNames(
+    styles.section,
+    props.sectionName === "hero" ? `${styles.heroSection}` : ``,
+    props.sectionName === "about" ? `${styles.aboutSection}` : ``,
+    props.sectionName === "comingsoon" ? `${styles.comingsoonSection}` : ``,
+    props.sectionName === "links" ? `${styles.linksSection}` : ``,
+    props.sectionName === "project" ? `${styles.projectSection}` : ``,
+    props.sectionName === "blog" ? `${styles.blogSection}` : ``,
+    props.sectionName === "footer" ? `${styles.footerSection}` : ``,
+  );
+
+  return (
+    <section className={classes}>
+      {this.props.children}
+    </section>
+  )
 }
 
 export default Section
