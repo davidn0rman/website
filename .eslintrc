@@ -1,0 +1,9 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "quotes": ["error", "double"],
+    "react/jsx-one-expression-per-line": [0, {
+      "allow": "literal"
+    }]
+  }
+}
