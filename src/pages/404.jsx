@@ -1,6 +1,4 @@
 import React from "react";
-// import { graphql } from "gatsby"
-// import styles from "./styles/404.module.scss"
 
 export default function Index(data) {
   return (
@@ -10,14 +8,3 @@ export default function Index(data) {
     </>
   );
 }
-
-// export const pageQuery = graphql`
-//   query {
-//     site {
-//       siteMetadata {
-//         title
-//         shortname
-//       }
-//     }
-//   }
-// `

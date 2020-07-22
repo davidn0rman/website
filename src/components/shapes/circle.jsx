@@ -38,19 +38,22 @@ const Circle = ({
 };
 
 Circle.propTypes = {
-  colour: PropTypes.string.isRequired,
   bottom: PropTypes.string,
-  opacity: PropTypes.string.isRequired,
+  colour: PropTypes.string,
+  opacity: PropTypes.string,
   left: PropTypes.string,
   right: PropTypes.string,
   top: PropTypes.string,
-  size: PropTypes.string.isRequired,
+  size: PropTypes.string,
 };
 
 Circle.defaultProps = {
   bottom: "",
+  colour: "1",
   left: "",
+  opacity: "1",
   right: "",
+  size: "3",
   top: "",
 };
 

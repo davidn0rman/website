@@ -8,13 +8,13 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
-    grid-template-areas: 
-      "header-ux" 
-      "icon-ux" 
-      "content-ux" 
+    grid-template-areas:
+      "header-ux"
+      "icon-ux"
+      "content-ux"
       "header-frontend"
       "icon-frontend"
-      "content-frontend" 
+      "content-frontend"
       "header-dad"
       "icon-dad"
       "content-dad";
@@ -22,7 +22,7 @@
 
   &-icon {
     &-ux {
-      grid-area: icon-ux; 
+      grid-area: icon-ux;
       margin: 0 0 1rem;
     }
     &-frontend {
@@ -37,7 +37,7 @@
 
   &-header {
     &-ux {
-      grid-area: header-ux; 
+      grid-area: header-ux;
     }
     &-frontend {
       grid-area: header-frontend;
@@ -181,7 +181,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto auto;
-      grid-template-areas: 
+      grid-template-areas:
         "header-ux header-frontend header-dad"
         "icon-ux icon-frontend icon-dad"
         "content-ux content-frontend content-dad";

@@ -41,20 +41,23 @@ const Cross = ({
 
 Cross.propTypes = {
   bottom: PropTypes.string,
-  colour: PropTypes.string.isRequired,
+  colour: PropTypes.string,
   left: PropTypes.string,
-  opacity: PropTypes.string.isRequired,
+  opacity: PropTypes.string,
   right: PropTypes.string,
   rotate: PropTypes.string,
-  size: PropTypes.string.isRequired,
+  size: PropTypes.string,
   top: PropTypes.string,
 };
 
 Cross.defaultProps = {
   bottom: "",
+  colour: "",
   left: "",
+  opacity: "1",
   right: "",
   rotate: "",
+  size: "3",
   top: "",
 };
 

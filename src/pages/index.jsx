@@ -27,7 +27,7 @@ const Index = () => (
         <Helmet>
           <html lang="en" />
           <title>{data.title}</title>
-          <meta name="description" content="Oh boy can I send a mean gif." />
+          <meta name="description" content={data.site.siteMetadata.description} />
         </Helmet>
         {/* <Navigation /> */}
         <Section sectionName="hero">
