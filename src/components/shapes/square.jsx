@@ -41,20 +41,23 @@ const Square = ({
 
 Square.propTypes = {
   bottom: PropTypes.string,
-  colour: PropTypes.string.isRequired,
+  colour: PropTypes.string,
   left: PropTypes.string,
-  opacity: PropTypes.string.isRequired,
+  opacity: PropTypes.string,
   right: PropTypes.string,
   rotate: PropTypes.string,
-  size: PropTypes.string.isRequired,
+  size: PropTypes.string,
   top: PropTypes.string,
 };
 
 Square.defaultProps = {
   bottom: "",
+  colour: null,
   left: "",
+  opacity: "1",
   right: "",
   rotate: "",
+  size: "3",
   top: "",
 };
 
