@@ -28,6 +28,7 @@
     "eslint-config-airbnb": "^18.2.0",
     "eslint-loader": "^4.0.2",
     "gatsby-plugin-eslint": "^2.0.8",
+    "husky": "^4.2.5",
     "prettier": "^2.0.5"
   },
   "keywords": [
@@ -41,7 +42,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "update-deps-naughty": "npm update --save/--save-dev -f"
+    "update-deps-naughty": "npm update --save/--save-dev -f",
+    "linkt": "eslint --ext .jsx ."
   },
   "repository": {
     "type": "git",
@@ -49,5 +51,12 @@
   },
   "bugs": {
     "url": "https://github.com/davidn0rman/website/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm lint",
+      "pre-push": "npm lint",
+      "...": "..."
+    }
   }
 }
