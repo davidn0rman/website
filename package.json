@@ -43,7 +43,7 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "update-deps-naughty": "npm update --save/--save-dev -f",
-    "linkt": "eslint --ext .jsx ."
+    "lint": "eslint --ext .jsx ."
   },
   "repository": {
     "type": "git",
@@ -54,8 +54,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm lint",
-      "pre-push": "npm lint",
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint",
       "...": "..."
     }
   }

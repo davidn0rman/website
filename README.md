@@ -8,6 +8,8 @@
 
 Cheeky repo for me to learn and play with React and Gatsby.
 
+![ESLint](https://github.com/davidn0rman/website/workflows/ESLint/badge.svg)
+
 # Useful commands
 
 1. Install `nodejs` and `npm` - Required
