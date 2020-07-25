@@ -8,7 +8,7 @@
 
 Cheeky repo for me to learn and play with React and Gatsby.
 
-![ESLint](https://github.com/davidn0rman/website/workflows/ELLint/badge.svg)
+![ESLint](https://github.com/davidn0rman/website/workflows/ESLint/badge.svg)
 
 # Useful commands
 
