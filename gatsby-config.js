@@ -7,7 +7,9 @@ module.exports = {
     fullname: "David Norman",
   },
   plugins: [
+    "gatsby-plugin-offline",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-typescript",
     {
       resolve: "gatsby-source-filesystem",
       options: {
