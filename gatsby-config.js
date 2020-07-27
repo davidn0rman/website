@@ -9,7 +9,10 @@ module.exports = {
   plugins: [
     "gatsby-plugin-offline",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -17,9 +20,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog-posts`,
+        path: `${__dirname}/src/blog-posts`,
+      },
+    },
+    "gatsby-transformer-remark",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
