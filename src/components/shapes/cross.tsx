@@ -13,7 +13,7 @@ const Cross = ({
   top,
   size,
   rotate,
-}) => {
+}): JSX.Element => {
   const classes = classNames(
     styles.cross,
     colour === "purple" ? `${styles.purple}` : "",

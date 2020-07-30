@@ -2,7 +2,7 @@ import React from "react";
 // import classNames from "classnames"
 import styles from "./navigation.module.scss";
 
-const Navigation = () => (
+const Navigation = (): JSX.Element => (
   <nav className={styles.navigation}>
     <ul className={styles.navLinks}>
       <li>

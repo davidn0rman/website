@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./hero-section.module.scss";
 
-const HeroSection = ({ id, name }) => (
+const HeroSection = ({ id, name }): JSX.Element => (
   // const classes = classNames(
   //   styles.section,
   //   this.props.isHero ? `${styles.sectionHero}` : ``,

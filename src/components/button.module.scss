@@ -1,9 +1,9 @@
 .button {
   align-self: center;
-  background-color: #ffffff;
-  border: 5px solid #000000;
-  box-shadow: 10px 10px 0 #000000;
-  color: #000000;
+  background-color: #fff;
+  border: 5px solid #000;
+  box-shadow: 10px 10px 0 0000;
+  color: #000;
   font-family: inherit;
   font-size: 2rem;
   font-weight: 700;
@@ -17,9 +17,8 @@
 
   &:active {
     box-shadow: none;
-    // box-shadow: orange 0 0 0 6px;
+    left: 10px;
     position: relative;
     top: 10px;
-    left:10px;
   }
 }

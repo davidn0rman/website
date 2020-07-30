@@ -12,7 +12,7 @@ const Circle = ({
   right,
   top,
   size,
-}) => {
+}): JSX.Element => {
   const classes = classNames(
     styles.circle,
     colour === "purple" ? `${styles.purple}` : "",

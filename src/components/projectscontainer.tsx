@@ -4,7 +4,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 import styles from "./projectscontainer.module.scss";
 
-const ProjectsContainer = ({ children }) => {
+const ProjectsContainer = ({ children }): JSX.Element => {
   const classes = classNames(
     styles.projectsContainer,
   );

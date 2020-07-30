@@ -1,17 +1,18 @@
 html {
   box-sizing: border-box;
 }
+
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
+  background-color: #fafafa;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
-  font-family: "Source Sans Pro";
 }
 
 // @media (prefers-color-scheme: dark) {
