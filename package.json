@@ -37,6 +37,9 @@
     "gatsby-plugin-typescript": "^2.4.16",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
     "typescript": "^3.9.7"
   },
   "keywords": [
@@ -47,9 +50,10 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "lint-legacy": "eslint --ext .tsx .",
-    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
+    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx && npm run lint-sass",
     "lint:fix": "npm run lint --fix",
+    "lint-legacy": "eslint --ext .tsx .",
+    "lint-sass": "npx stylelint src/**/*.scss",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",

@@ -1,20 +1,20 @@
 .projects-container {
-  width: 600px;
-  height: 300px;
   border-radius: 7px;
-  margin-bottom: 6rem;
   display: flex;
   flex-direction: column;
+  height: 300px;
+  margin-bottom: 6rem;
+  width: 600px;
 }
 
 .top {
   background-color: #454440;
-  height: 3rem;
   border-radius: 7px 7px 0 0;
+  height: 3rem;
 }
 
 .bottom {
-  flex: 1 1;
-  border-radius: 0 0 7px 7px;
   background-color: #fff;
+  border-radius: 0 0 7px 7px;
+  flex: 1 1;
 }
