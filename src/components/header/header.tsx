@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Header = ({ headerText }) => (
+const Header = ({ headerText }): JSX.Element => (
   <h1>{headerText}</h1>
 );
 

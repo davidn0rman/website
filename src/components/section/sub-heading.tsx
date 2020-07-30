@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./sub-heading.module.scss";
 
-const SubHeading = ({ text, emoji }) => (
+const SubHeading = ({ text, emoji }): JSX.Element => (
   <p
     className={styles.subHeading}
   >

@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./blogpreviewcontainer.module.scss";
 
-const BlogPreviewContainer = ({ children }) => {
+const BlogPreviewContainer = ({ children }): JSX.Element => {
   return (
     <div className={styles.container}>
       {children}

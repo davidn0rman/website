@@ -13,7 +13,7 @@ const Square = ({
   rotate,
   top,
   size,
-}) => {
+}): JSX.Element => {
   const classes = classNames(
     styles.square,
     colour === "purple" ? `${styles.purple}` : "",

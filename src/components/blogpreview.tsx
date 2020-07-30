@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import styles from "./blogpreview.module.scss";
 
-const BlogPreview = ({ slug, title, excerpt, date, key }) => {
+const BlogPreview = ({ slug, title, excerpt, date, key }): JSX.Element => {
 
   return (
     <article key={key} className={styles.article}>

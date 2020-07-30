@@ -3,12 +3,12 @@
     display: grid;
     flex-direction: row;
     grid-template-areas:
-      "header-ux"
-      "icon-ux"
-      "content-ux"
       "header-frontend"
       "icon-frontend"
       "content-frontend"
+      "header-ux"
+      "icon-ux"
+      "content-ux"
       "header-dad"
       "icon-dad"
       "content-dad";
@@ -165,6 +165,10 @@
   }
 }
 
+.footer-text {
+  color: #fff;
+}
+
 @media only screen and (min-width: 768px) {
   .hero-h1 {
     font-size: 13rem;
@@ -179,9 +183,9 @@
     display: grid;
     flex-direction: row;
     grid-template-areas:
-      "header-ux header-frontend header-dad"
-      "icon-ux icon-frontend icon-dad"
-      "content-ux content-frontend content-dad";
+      "header-frontend header-ux header-dad"
+      "icon-frontend icon-ux icon-dad"
+      "content-frontend  content-ux content-dad";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     margin: 0 1rem 4rem;

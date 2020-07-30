@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import styles from "./heading.module.scss";
 
-const Heading = ({ heading, text }) => {
+const Heading = ({ heading, text }): JSX.Element => {
   const classes = classNames(
     styles.heading,
     // this.props.heading === "H1" ? `${styles.h1}` : ``,

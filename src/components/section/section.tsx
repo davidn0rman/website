@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import styles from "./section.module.scss";
 
-const Section = ({ children, sectionName }) => {
+const Section = ({ children, sectionName }): JSX.Element => {
   const classes = classNames(
     styles.section,
     sectionName === "hero" ? `${styles.heroSection}` : "",

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import styles from "./section-content.module.scss";
 
-const SectionContent = ({ children, horizontal }) => {
+const SectionContent = ({ children, horizontal }): JSX.Element => {
   const classes = classNames(
     styles.sectionContent,
     horizontal ? `${styles.sectionContentHorizontal}` : "",

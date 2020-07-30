@@ -5,7 +5,7 @@ import Circle from "./circle";
 import Cross from "./cross";
 import Square from "./square";
 
-const ShapeContainer = () => (
+const ShapeContainer = (): JSX.Element => (
   <div className={styles.shapeContainer}>
     <Circle colour="blue" left="18" bottom="27" />
     <Circle colour="blue" left="3" bottom="5" opacity="0.66" />
