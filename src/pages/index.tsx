@@ -106,7 +106,7 @@ const Index = (): JSX.Element => {
             <Section sectionName="links">
               <div className={styles.linksContainer}>
                 <ImageButton link="https://github.com/davidn0rman" size="32" icon="github" />
-                <ImageButton link="https://github.com/davidn0rman" size="32" icon="twitter" />
+                <ImageButton link="https://twitter.com/davidn0rman" size="32" icon="twitter" />
               </div>
             </Section>
             {/* <Section sectionName="project">
