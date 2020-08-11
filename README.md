@@ -8,7 +8,7 @@
 
 Cheeky repo for me to learn and play with React and Gatsby.
 
-![ESLint](https://github.com/davidn0rman/website/workflows/ESLint/badge.svg)
+![ESLint](https://github.com/davidn0rman/website/workflows/ESLint/badge.svg) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=davidn0rman_website&metric=alert_status)](https://sonarcloud.io/dashboard?id=davidn0rman_website)
 
 # Useful commands
 
