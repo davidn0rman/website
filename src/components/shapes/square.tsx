@@ -1,19 +1,30 @@
 // import classNames from "classnames";
 import React from "react";
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import styles from "./square.module.scss";
 
-const Square = ({
-  bottom,
-  colour,
-  opacity,
-  left,
-  right,
-  rotate,
-  top,
-  size,
-}): JSX.Element => {
+interface ISquareProps {
+  bottom: string;
+  colour: string;
+  opacity: string;
+  left: string;
+  right: string;
+  rotate: string;
+  top: string;
+  size: string;
+}
+
+const Square: React.FC<ISquareProps> = (props: ISquareProps): JSX.Element => {
+  const {
+    bottom,
+    colour,
+    opacity,
+    left,
+    right,
+    rotate,
+    top,
+    size,
+  } = props;
   const classes = classNames(
     styles.square,
     colour === "purple" ? `${styles.purple}` : "",
@@ -37,28 +48,6 @@ const Square = ({
       }
     />
   );
-};
-
-Square.propTypes = {
-  bottom: PropTypes.string,
-  colour: PropTypes.string,
-  left: PropTypes.string,
-  opacity: PropTypes.string,
-  right: PropTypes.string,
-  rotate: PropTypes.string,
-  size: PropTypes.string,
-  top: PropTypes.string,
-};
-
-Square.defaultProps = {
-  bottom: "",
-  colour: null,
-  left: "",
-  opacity: "1",
-  right: "",
-  rotate: "",
-  size: "3",
-  top: "",
 };
 
 export default Square;

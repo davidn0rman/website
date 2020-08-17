@@ -1,19 +1,31 @@
 // import classNames from "classnames";
 import React from "react";
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import styles from "./cross.module.scss";
 
-const Cross = ({
-  bottom,
-  colour,
-  opacity,
-  left,
-  right,
-  top,
-  size,
-  rotate,
-}): JSX.Element => {
+interface ICrossProps {
+  bottom: string;
+  colour: string;
+  opacity: string;
+  left: string;
+  right: string;
+  top: string;
+  size: string;
+  rotate: string;
+};
+
+const Cross: React.FC<ICrossProps> = (props: ICrossProps): JSX.Element => {
+  const {
+    bottom,
+    colour,
+    opacity,
+    left,
+    right,
+    top,
+    size,
+    rotate,
+  } = props;
+
   const classes = classNames(
     styles.cross,
     colour === "purple" ? `${styles.purple}` : "",
@@ -37,28 +49,6 @@ const Cross = ({
       }
     />
   );
-};
-
-Cross.propTypes = {
-  bottom: PropTypes.string,
-  colour: PropTypes.string,
-  left: PropTypes.string,
-  opacity: PropTypes.string,
-  right: PropTypes.string,
-  rotate: PropTypes.string,
-  size: PropTypes.string,
-  top: PropTypes.string,
-};
-
-Cross.defaultProps = {
-  bottom: "",
-  colour: "",
-  left: "",
-  opacity: "1",
-  right: "",
-  rotate: "",
-  size: "3",
-  top: "",
 };
 
 export default Cross;
