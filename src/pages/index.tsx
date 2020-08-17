@@ -39,7 +39,7 @@ const Index = (): JSX.Element => {
       }
       `}
       render={(data) => {
-        const getNumberOfPosts =  4;
+        const getNumberOfPosts = 4;
         const latestPosts = data.allMarkdownRemark.edges.slice(0, getNumberOfPosts)
 
         console.log(latestPosts)
@@ -122,16 +122,16 @@ const Index = (): JSX.Element => {
                 <BlogPreviewContainer>
                   {latestPosts.map(({ node }) => {
                     const title = node.frontmatter.title || node.frontmatter.slug
-                      return (
-                        <BlogPreview
-                          key={node.frontmatter.slug}
-                          slug={node.frontmatter.slug}
-                          title={title}
-                          date={node.frontmatter.date}
-                          excerpt={node.excerpt}
-                        />
-                      )
-                    }
+                    return (
+                      <BlogPreview
+                        key={node.frontmatter.slug}
+                        slug={node.frontmatter.slug}
+                        title={title}
+                        date={node.frontmatter.date}
+                        excerpt={node.excerpt}
+                      />
+                    )
+                  }
                   )}
                 </BlogPreviewContainer>
               </SectionContent>

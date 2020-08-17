@@ -1,19 +1,14 @@
 {
   "extends": "stylelint-config-standard",
-  "plugins": [
-		"stylelint-order"
-	],
+  "plugins": ["stylelint-order"],
   "rules": {
-    "at-rule-no-unknown": [ true, {
-      "ignoreAtRules": [
-        "function",
-        "if",
-        "include",
-        "mixin",
-        "return"
-      ]
-    }],
-    "number-leading-zero": "never",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["function", "if", "include", "mixin", "return"]
+      }
+    ],
+    "number-leading-zero": "always",
     "no-descending-specificity": null,
     "order/properties-alphabetical-order": true
   }
