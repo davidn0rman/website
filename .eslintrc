@@ -1,7 +1,17 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "rules": {
-    "strict": 0
+    "strict": 0,
+    "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx"] }],
+    "semi": [2, "always"]
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"]
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ]
 }
