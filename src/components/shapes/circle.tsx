@@ -1,7 +1,7 @@
 // import classNames from "classnames";
-import React, { FC } from 'react';
-import classNames from 'classnames';
-import styles from './circle.module.scss';
+import React, { FC } from "react";
+import classNames from "classnames";
+import styles from "./circle.module.scss";
 
 interface ICircleProps {
   bottom: string;
@@ -18,11 +18,9 @@ const Circle: FC<ICircleProps> = (props: ICircleProps): JSX.Element => {
 
   const classes = classNames(
     styles.circle,
-    colour === 'purple' ? `${styles.purple}` : '',
-    colour === 'blue' ? `${styles.blue}` : ''
+    colour === "purple" ? `${styles.purple}` : "",
+    colour === "blue" ? `${styles.blue}` : ""
   );
-
-  const david: string = 'david';
 
   return (
     <div
