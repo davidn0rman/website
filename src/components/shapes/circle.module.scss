@@ -1,13 +1,28 @@
 .circle {
-  border: 3px solid rgba(255, 255, 255, 0.66);
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: slidein;
+  border: 3px solid rgba(255, 255, 255, .66);
   border-radius: 50%;
   position: absolute;
 }
 
 .purple {
-  border: 3px solid rgba(130, 41, 222, 0.66);
+  border: 3px solid rgba(130, 41, 222, .66);
 }
 
 .blue {
-  border: 3px solid rgba(32, 212, 246, 0.33);
+  border: 3px solid rgba(32, 212, 246, .33);
+}
+
+@keyframes slidein {
+  from {
+    // opacity: 0;
+  }
+
+  to {
+    transform: translate(0, -50px);
+    // opacity: 0;
+  }
 }

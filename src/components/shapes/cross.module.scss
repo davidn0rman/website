@@ -1,21 +1,25 @@
 .cross {
-  position: absolute;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: spin;
+  animation-timing-function: linear;
   opacity: .66;
+  position: absolute;
 
   &::before {
-    content: "";
-    position: absolute;
     background-color: #fff;
-    min-width: 3px;
+    content: "";
     height: 62px;
+    min-width: 3px;
+    position: absolute;
   }
 
   &::after {
-    content: "";
-    position: absolute;
     background-color: #fff;
-    min-width: 3px;
+    content: "";
     height: 62px;
+    min-width: 3px;
+    position: absolute;
     transform: rotate(90deg);
   }
 }
@@ -28,4 +32,15 @@
 .blue::before,
 .blue::after {
   background-color: rgba(32, 212, 246, .33);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
