@@ -7,14 +7,14 @@
   border: 3px solid rgba(255, 255, 255, .66);
   border-radius: 3px;
   position: absolute;
-}
 
-.purple {
-  border: 3px solid rgba(130, 41, 222, .66);
-}
+  &--purple {
+    border: 3px solid rgba(130, 41, 222, .66);
+  }
 
-.blue {
-  border: 3px solid rgba(32, 212, 246, .33);
+  &--blue {
+    border: 3px solid rgba(32, 212, 246, .33);
+  }
 }
 
 @keyframes rotateSquare {

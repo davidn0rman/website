@@ -19,8 +19,8 @@ const Cross: React.FC<ICrossProps> = (props: ICrossProps): JSX.Element => {
 
   const classes = classNames(
     styles.cross,
-    colour === "purple" ? `${styles.purple}` : "",
-    colour === "blue" ? `${styles.blue}` : ""
+    colour === "purple" ? `${styles.crossPurple}` : "",
+    colour === "blue" ? `${styles.crossBlue}` : ""
   );
 
   const crossSize: string = size || "3";

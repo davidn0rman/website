@@ -2,21 +2,22 @@
   animation-direction: alternate;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-name: slidein;
+  animation-name: slideUp;
+  animation-timing-function: ease-in-out;
   border: 3px solid rgba(255, 255, 255, .66);
   border-radius: 50%;
   position: absolute;
+
+  &--purple {
+    border: 3px solid rgba(130, 41, 222, .66);
+  }
+
+  &--blue {
+    border: 3px solid rgba(32, 212, 246, .33);
+  }
 }
 
-.purple {
-  border: 3px solid rgba(130, 41, 222, .66);
-}
-
-.blue {
-  border: 3px solid rgba(32, 212, 246, .33);
-}
-
-@keyframes slidein {
+@keyframes slideUp {
   from {
     // opacity: 0;
   }

@@ -15,11 +15,11 @@ interface ICircleProps {
 
 const Circle: FC<ICircleProps> = (props: ICircleProps): JSX.Element => {
   const { bottom, colour, opacity, left, right, top, size } = props;
-
+  console.log(colour);
   const classes = classNames(
     styles.circle,
-    colour === "purple" ? `${styles.purple}` : "",
-    colour === "blue" ? `${styles.blue}` : ""
+    colour === "purple" ? `${styles.circlePurple}` : "",
+    colour === "blue" ? `${styles.circleBlue}` : ""
   );
 
   const circleSize: string = size || "3";
