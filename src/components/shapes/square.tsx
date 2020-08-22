@@ -28,8 +28,8 @@ const Square: React.FC<ISquareProps> = (props: ISquareProps): JSX.Element => {
 
   const classes = classNames(
     styles.square,
-    colour === "purple" ? `${styles.purple}` : "",
-    colour === "blue" ? `${styles.blue}` : "",
+    colour === "purple" ? `${styles.squarePurple}` : "",
+    colour === "blue" ? `${styles.squareBlue}` : "",
   );
 
   const squareSize: string = size || "3";

@@ -22,16 +22,16 @@
     position: absolute;
     transform: rotate(90deg);
   }
-}
 
-.purple::before,
-.purple::after {
-  background-color: rgba(130, 41, 222, .66);
-}
+  &--purple::before,
+  &--purple::after {
+    background-color: rgba(130, 41, 222, .66);
+  }
 
-.blue::before,
-.blue::after {
-  background-color: rgba(32, 212, 246, .33);
+  &--blue::before,
+  &--blue::after {
+    background-color: rgba(32, 212, 246, .33);
+  }
 }
 
 @keyframes spin {
