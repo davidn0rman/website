@@ -25,11 +25,15 @@ const Square: React.FC<ISquareProps> = (props: ISquareProps): JSX.Element => {
     top,
     size,
   } = props;
+
   const classes = classNames(
     styles.square,
     colour === "purple" ? `${styles.purple}` : "",
     colour === "blue" ? `${styles.blue}` : "",
   );
+
+  const squareSize: string = size || "3";
+
 
   return (
     <div
@@ -37,13 +41,13 @@ const Square: React.FC<ISquareProps> = (props: ISquareProps): JSX.Element => {
       style={
         {
           bottom: `${bottom}%`,
-          height: `${size}rem`,
+          height: `${squareSize}rem`,
           left: `${left}%`,
           opacity,
           right: `${right}%`,
           top: `${top}%`,
           transform: `rotate(${rotate}deg)`,
-          width: `${size}rem`,
+          width: `${squareSize}rem`,
         }
       }
     />

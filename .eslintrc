@@ -4,13 +4,18 @@
   "rules": {
     "strict": 0,
     "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx"] }],
-    "semi": [2, "always"]
+    "semi": [2, "always"],
+    "import/extensions": [0, {
+      "tsx": "never",
+      "ts": "never"
+    }]
   },
   "extends": [
+    "airbnb",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "airbnb",
+    "plugin:import/typescript",
     "prettier",
     "prettier/react"
   ]

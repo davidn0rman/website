@@ -40,9 +40,8 @@ const Index = (): JSX.Element => {
       `}
       render={(data) => {
         const getNumberOfPosts = 4;
-        const latestPosts = data.allMarkdownRemark.edges.slice(0, getNumberOfPosts)
+        const latestPosts = data.allMarkdownRemark.edges.slice(0, getNumberOfPosts);
 
-        console.log(latestPosts)
         return (
           <>
             <Helmet>
@@ -118,10 +117,10 @@ const Index = (): JSX.Element => {
             <Section sectionName="blog">
               <SectionContent>
                 <h1 className={styles.blogH1}>Blog</h1>
-                <p className={styles.aboutSubtext}>Probably a place that&apos;ll probably be forever empty. 👀</p>
+                <p className={styles.aboutSubtext}>Probably a place that&apos;ll probably be forever empty. <span role="img" aria-label="side eyes emoji">👀</span></p>
                 <BlogPreviewContainer>
                   {latestPosts.map(({ node }) => {
-                    const title = node.frontmatter.title || node.frontmatter.slug
+                    const title = node.frontmatter.title || node.frontmatter.slug;
                     return (
                       <BlogPreview
                         key={node.frontmatter.slug}
@@ -130,7 +129,7 @@ const Index = (): JSX.Element => {
                         date={node.frontmatter.date}
                         excerpt={node.excerpt}
                       />
-                    )
+                    );
                   }
                   )}
                 </BlogPreviewContainer>
@@ -142,10 +141,10 @@ const Index = (): JSX.Element => {
               </SectionContent>
             </Section>
           </>
-        )
+        );
       }}
     />
-  )
+  );
 };
 
 export default Index;

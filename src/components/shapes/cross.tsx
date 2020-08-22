@@ -23,18 +23,20 @@ const Cross: React.FC<ICrossProps> = (props: ICrossProps): JSX.Element => {
     colour === "blue" ? `${styles.blue}` : ""
   );
 
+  const crossSize: string = size || "3";
+
   return (
     <div
       className={classes}
       style={{
         bottom: `${bottom}%`,
-        height: `${size}rem`,
+        height: `${crossSize}rem`,
         left: `${left}%`,
         opacity,
         right: `${right}%`,
         top: `${top}%`,
         transform: `rotate(${rotate}deg)`,
-        width: `${size}rem`,
+        width: `${crossSize}rem`,
       }}
     />
   );

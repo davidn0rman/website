@@ -22,17 +22,19 @@ const Circle: FC<ICircleProps> = (props: ICircleProps): JSX.Element => {
     colour === "blue" ? `${styles.blue}` : ""
   );
 
+  const circleSize: string = size || "3";
+
   return (
     <div
       className={classes}
       style={{
         bottom: `${bottom}%`,
-        height: `${size}rem`,
+        height: `${circleSize}rem`,
         left: `${left}%`,
         opacity,
         right: `${right}%`,
         top: `${top}%`,
-        width: `${size}rem`,
+        width: `${circleSize}rem`,
       }}
     />
   );

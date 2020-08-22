@@ -1,0 +1,9 @@
+{
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "eslint.alwaysShowStatus": true,
+  "sonarlint.connectedMode.project": {
+    "projectKey": "davidn0rman_website"
+  },
+  "sonarlint.ls.javaHome": "/usr/lib/jvm/java-11-openjdk-amd64"
+}
