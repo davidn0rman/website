@@ -4,14 +4,14 @@ import classNames from "classnames";
 import styles from "./cross.module.scss";
 
 interface ICrossProps {
-  bottom: string;
-  colour: string;
-  opacity: string;
-  left: string;
-  right: string;
-  top: string;
-  size: string;
-  rotate: string;
+  bottom?: string;
+  colour?: string;
+  left?: string;
+  opacity?: string;
+  right?: string;
+  rotate?: string;
+  size?: string;
+  top?: string;
 }
 
 const Cross: React.FC<ICrossProps> = (props: ICrossProps): JSX.Element => {
@@ -23,20 +23,18 @@ const Cross: React.FC<ICrossProps> = (props: ICrossProps): JSX.Element => {
     colour === "blue" ? `${styles.crossBlue}` : ""
   );
 
-  const crossSize: string = size || "3";
-
   return (
     <div
       className={classes}
       style={{
-        bottom: `${bottom}%`,
-        height: `${crossSize}rem`,
-        left: `${left}%`,
+        bottom: `${bottom || null}%`,
+        height: `${size || "3"}rem`,
+        left: `${left || null}%`,
         opacity,
-        right: `${right}%`,
-        top: `${top}%`,
-        transform: `rotate(${rotate}deg)`,
-        width: `${crossSize}rem`,
+        right: `${right || null}%`,
+        top: `${top || null}%`,
+        transform: `rotate(${rotate || null}deg)`,
+        width: `${size || "3"}rem`,
       }}
     />
   );

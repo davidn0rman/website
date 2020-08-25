@@ -1,9 +1,8 @@
 import React from "react";
-import Header from "../components/header/header";
 
 const About = (): JSX.Element => (
-  <div style={{ color: "teal" }}>
-    <Header headerText="About me" />
+  <div>
+    <h2>About me</h2>
     <p>Such wow. Very React.</p>
   </div>
 );
