@@ -1,20 +1,22 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { FC, PropsWithChildren } from "react";
 import styles from "./button.module.scss";
 
-const Button = ({ children, href }): JSX.Element => (
-  // <button >{this.props.children}</button>
-  <a className={styles.button} href={href} target="_blank" rel="noreferrer">
-    {children}
-  </a>
-);
+export interface IButtonProps {
+  /**
+   * The link location
+   */
+  href: string;
+}
 
-Button.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-  href: PropTypes.string.isRequired,
+type Props = PropsWithChildren<IButtonProps>;
+
+export const Button: FC<Props> = (props: Props): JSX.Element => {
+  const {
+    children,
+    href,
+  } = props;
+
+  return (
+    <a className={styles.button} href={href} target="_blank" rel="noreferrer">{children}</a>
+  );
 };
-
-export default Button;
