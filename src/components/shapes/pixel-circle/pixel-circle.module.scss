@@ -1,0 +1,148 @@
+$regularBlockSize: 12.5%;
+$smallBlockSize: 25%;
+$largeBlockSize: 6.25%;
+
+@mixin layerPosition($baseSize, $top, $left, $height, $width, $opacity) {
+  height: #{$height * $baseSize};
+  left: #{$left * $baseSize};
+  opacity: $opacity;
+  position: absolute;
+  top: #{$top * $baseSize};
+  width: #{$width * $baseSize};
+}
+
+.white {
+  background-color: rgb(255, 255, 255);
+}
+
+.blue {
+  background-color: rgb(16, 87, 126);
+}
+
+.red {
+  background-color: rgb(172, 55, 48);
+}
+
+.green {
+  background-color: rgb(15, 68, 44);
+}
+
+.sizeRegular-1-1 {
+  @include layerPosition($regularBlockSize, 0, 2, 8, 4, 0.25);
+}
+
+.sizeRegular-1-2 {
+  @include layerPosition($regularBlockSize, 2, 0, 4, 8, 0.25);
+}
+
+.sizeRegular-1-3 {
+  @include layerPosition($regularBlockSize, 1, 1, 6, 6, 0.25);
+}
+
+.sizeRegular-2-1 {
+  @include layerPosition($regularBlockSize, 0, 3, 8, 2, 0.5);
+}
+
+.sizeRegular-2-2 {
+  @include layerPosition($regularBlockSize, 3, 0, 2, 8, 0.5);
+}
+
+.sizeRegular-3-1 {
+  @include layerPosition($regularBlockSize, 1, 2, 6, 4, 0.75);
+}
+
+.sizeRegular-3-2 {
+  @include layerPosition($regularBlockSize, 2, 1, 4, 6, 0.75);
+}
+
+.sizeRegular-4-1 {
+  @include layerPosition($regularBlockSize, 1, 3, 6, 2, 1);
+}
+
+.sizeRegular-4-2 {
+  @include layerPosition($regularBlockSize, 2, 2, 4, 4, 1);
+}
+
+.sizeRegular-4-3 {
+  @include layerPosition($regularBlockSize, 3, 1, 2, 6, 1);
+}
+
+.sizeSmall-1-1 {
+  @include layerPosition($smallBlockSize, 0, 0, 1, 3, 0.25);
+}
+
+.sizeSmall-2-1 {
+  @include layerPosition($smallBlockSize, 2, 0, 1, 3, 0.5);
+}
+
+.sizeSmall-3-1 {
+  @include layerPosition($smallBlockSize, 0, 1, 1, 1, 0.75);
+}
+
+.sizeSmall-3-2 {
+  @include layerPosition($smallBlockSize, 1, 0, 1, 3, 0.75);
+}
+
+.sizeSmall-4-1 {
+  @include layerPosition($smallBlockSize, 1, 1, 2, 1, 1);
+}
+
+.sizeLarge-1-1 {
+  @include layerPosition($largeBlockSize, 0, 4, 16, 8, 0.25);
+}
+
+.sizeLarge-1-2 {
+  @include layerPosition($largeBlockSize, 1, 3, 14, 10, 0.25);
+}
+
+.sizeLarge-1-3 {
+  @include layerPosition($largeBlockSize, 2, 2, 12, 12, 0.25);
+}
+
+.sizeLarge-1-4 {
+  @include layerPosition($largeBlockSize, 3, 1, 10, 14, 0.25);
+}
+
+.sizeLarge-1-5 {
+  @include layerPosition($largeBlockSize, 4, 0, 8, 16, 0.25);
+}
+
+.sizeLarge-2-1 {
+  @include layerPosition($largeBlockSize, 0, 5, 16, 6, 0.5);
+}
+
+.sizeLarge-2-2 {
+  @include layerPosition($largeBlockSize, 5, 0, 6, 16, 0.5);
+}
+
+.sizeLarge-3-1 {
+  @include layerPosition($largeBlockSize, 0, 6, 16, 4, 0.75);
+}
+
+.sizeLarge-3-2 {
+  @include layerPosition($largeBlockSize, 1, 4, 14, 8, 0.75);
+}
+
+.sizeLarge-3-3 {
+  @include layerPosition($largeBlockSize, 4, 1, 8, 14, 0.75);
+}
+
+.sizeLarge-3-4 {
+  @include layerPosition($largeBlockSize, 6, 0, 4, 16, 0.75);
+}
+
+.sizeLarge-4-1 {
+  @include layerPosition($largeBlockSize, 1, 5, 14, 6, 1);
+}
+
+.sizeLarge-4-2 {
+  @include layerPosition($largeBlockSize, 2, 3, 12, 10, 1);
+}
+
+.sizeLarge-4-3 {
+  @include layerPosition($largeBlockSize, 3, 2, 10, 12, 1);
+}
+
+.sizeLarge-4-4 {
+  @include layerPosition($largeBlockSize, 5, 1, 6, 14, 1);
+}

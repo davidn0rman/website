@@ -5,17 +5,34 @@
     "strict": 0,
     "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx"] }],
     "semi": [2, "always"],
-    "import/extensions": [0, {
-      "tsx": "never",
-      "ts": "never"
-    }]
+    "import/extensions": [
+      0,
+      {
+        "tsx": "never",
+        "ts": "never"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    // "react/jsx-sort-props": "error",
+    // "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": 1,
+    // "react/prop-types": "warn"
+    "lines-between-class-members": ["error", "always"]
   },
   "extends": [
     "airbnb",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/typescript",
+    "airbnb-typescript",
+    // "eslint:recommended",
+    // "plugin:react/recommended",
+    // "plugin:@typescript-eslint/recommended",
+    // "plugin:import/typescript",
     "prettier",
     "prettier/react"
   ]

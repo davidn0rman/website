@@ -1,0 +1,125 @@
+// $size: 3rem;
+// $duration: 3s;
+// https://codepen.io/davidn0rman/pen/OJNrxWb
+
+.circle {
+  animation-direction: alternate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: slideUp, slideLeft;
+  animation-timing-function: ease-in-out;
+  border: 3px solid rgba(255, 255, 255, 0.66);
+  border-radius: 50%;
+  position: absolute;
+
+  &--purple {
+    border: 3px solid rgba(130, 41, 222, 0.66);
+  }
+
+  &--blue {
+    border: 3px solid rgba(32, 212, 246, 0.33);
+  }
+}
+
+// .animation-1 {
+//   // animation-delay: 0.25s;
+//   animation-duration: 2s;
+//   animation-name: slideUp1;
+// }
+
+// .animation-2 {
+//   // animation-delay: 0.5s;
+//   animation-duration: 2.5s;
+//   animation-name: slideUp2;
+// }
+
+// .animationy-3 {
+//   // animation-delay: 0.75s;
+//   animation-duration: 1s;
+//   animation-name: slideUp3;
+// }
+
+// .animation-4 {
+//   // animation-delay: 1s;
+//   animation-duration: 1.5s;
+//   animation-name: slideUp4;
+// }
+
+@keyframes slideUp {
+  from {
+    // opacity: 1;
+    top: calc(100vh - 3rem);
+  }
+
+  to {
+    // opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    // opacity: 1;
+    left: calc(100vw - 3rem);
+  }
+
+  to {
+    // opacity: 1;
+    left: 0;
+  }
+}
+
+// @keyframes slideUp1 {
+//   from {
+//     left: calc(100vw - 3rem);
+//     top: calc(100vh - 3rem);
+//   }
+
+//   33% {
+//     left: 50vw;
+//     top: 0;
+//   }
+
+//   66% {
+//     left: 0;
+//     top: 50vh;
+//   }
+
+//   to {
+//     left: calc(100vw - 3rem);
+//     top: calc(100vh - 3rem);
+//   }
+// }
+
+// @keyframes slideUp2 {
+//   from {
+//     opacity: 1;
+//   }
+
+//   to {
+//     opacity: 0;
+//     transform: translate(0, -50px);
+//   }
+// }
+
+// @keyframes slideUp3 {
+//   from {
+//     opacity: 1;
+//   }
+
+//   to {
+//     opacity: 0;
+//     transform: translate(0, -50px);
+//   }
+// }
+
+// @keyframes slideUp4 {
+//   from {
+//     opacity: 1;
+//   }
+
+//   to {
+//     opacity: 0;
+//     transform: translate(0, -50px);
+//   }
+// }

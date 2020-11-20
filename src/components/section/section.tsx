@@ -1,17 +1,25 @@
 // import classNames from "classnames";
 import React from "react";
-import PropTypes from "prop-types";
 import classNames from "classnames";
 import styles from "./section.module.scss";
 
-const Section = ({ children, sectionName }): JSX.Element => {
+interface ISectionProps {
+  sectionName: string;
+}
+
+type Props = React.PropsWithChildren<ISectionProps>;
+
+const Section: React.FC<Props> = (props: Props): JSX.Element => {
+  const {
+    children,
+    sectionName,
+  } = props;
+
   const classes = classNames(
     styles.section,
     sectionName === "hero" ? `${styles.heroSection}` : "",
     sectionName === "about" ? `${styles.aboutSection}` : "",
-    sectionName === "comingsoon" ? `${styles.comingsoonSection}` : "",
     sectionName === "links" ? `${styles.linksSection}` : "",
-    sectionName === "project" ? `${styles.projectSection}` : "",
     sectionName === "blog" ? `${styles.blogSection}` : "",
     sectionName === "footer" ? `${styles.footerSection}` : "",
   );
@@ -21,16 +29,6 @@ const Section = ({ children, sectionName }): JSX.Element => {
       {children}
     </section>
   );
-};
-
-Section.propTypes = {
-  children: PropTypes.oneOfType(
-    [
-      PropTypes.arrayOf(PropTypes.node),
-      PropTypes.node,
-    ],
-  ).isRequired,
-  sectionName: PropTypes.string.isRequired,
 };
 
 export default Section;

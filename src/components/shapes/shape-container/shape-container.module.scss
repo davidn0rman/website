@@ -1,0 +1,47 @@
+.shape-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.bounce {
+  animation-direction: alternate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  &9 {
+    animation-name: bounce9;
+  }
+
+  &20 {
+    animation-name: bounce20;
+  }
+}
+
+@keyframes bounce9 {
+  from {
+    // opacity: 1;
+    top: calc(100vh - 27rem);
+  }
+
+  to {
+    // opacity: 1;
+    top: 18rem;
+  }
+}
+
+@keyframes bounce20 {
+  from {
+    // opacity: 1;
+    top: calc(100vh - 20rem);
+  }
+
+  to {
+    // opacity: 1;
+    top: 0;
+  }
+}

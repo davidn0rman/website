@@ -1,10 +1,10 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function Template({ data }) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { markdownRemark } = data; // data.markdownRemark holds your post data
+  const { frontmatter, html } = markdownRemark;
   return (
     <div className="blog-post-container">
       <div className="blog-post">
@@ -16,7 +16,7 @@ export default function Template({ data }) {
         />
       </div>
     </div>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -30,4 +30,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -5,5 +5,6 @@
   "sonarlint.connectedMode.project": {
     "projectKey": "davidn0rman_website"
   },
-  "sonarlint.ls.javaHome": "/usr/lib/jvm/java-11-openjdk-amd64"
+  "sonarlint.ls.javaHome": "/usr/lib/jvm/java-11-openjdk-amd64",
+  "editor.formatOnSave": true
 }
